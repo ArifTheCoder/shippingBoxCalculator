@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slurp</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="firstCol">
+            <h2>Amount of bages</h2>
+            <ul>
+                <li>
+                    <label for="twoHun">Bage size 200g:</label>
+                    <input id="twoHun" type="text" name="th">
+                </li>
+                <li>
+                    <label for="fourHun">Bage size 400g:</label>
+                    <input id="fourHun" type="text" name="fh">
+                </li>
+                <li>
+                    <label for="thousand">Bage size 1000g:</label>
+                    <input id="thousand" type="text" name="thou">
+                </li>
+            </ul>
+            <label id="bageErrMsg"></label>
+        </div>
+
+        <div id="secondCol">
+            <div id="box1">
+                <h2>Cubic box size</h2>
+                <label for="cubicBox">Cubic box edge length:</label>
+                <input id="cubicBox" type="text" name="cubx" placeholder="30cm - 100cm">
+                <br>
+                <label id="errMsgcub"></label>
+            </div>
+            <div id="box2">
+                <label id="boxResult"></label>
+                <br>
+                <button id="btnSubmit" onclick="getBoxes()">Calculate Boxes</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
